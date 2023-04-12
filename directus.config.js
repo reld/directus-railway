@@ -5,7 +5,9 @@ module.exports = function (env) {
       ADMIN_PASSWORD: env.ADMIN_PASSWORD,
       KEY: env.KEY,
       SECRET: env.SECRET,
-
+      CORS_ENABLED: env.CORS_ENABLED,
+      CORS_ORIGIN: env.CORS_ORIGIN,
+      
       // Reference: https://docs.railway.app/deploy/exposing-your-app
       PORT: env.PORT,
 
@@ -20,8 +22,9 @@ module.exports = function (env) {
       DB_DATABASE: env.PGDATABASE,
       DB_USER: env.PGUSER,
       DB_PASSWORD: env.PGPASSWORD,
-      STORAGE_LOCATIONS: "DigitalOcean",
-      STORAGE_DIGITALOCEAN_DRIVER: "s3",
+      DB_SSL: env.PGSSL,
+      STORAGE_LOCATIONS: env.STORAGE_LOCATIONS,
+      STORAGE_DIGITALOCEAN_DRIVER: env.STORAGE_DIGITALOCEAN_DRIVER,
       STORAGE_DIGITALOCEAN_KEY: env.STORAGE_DIGITALOCEAN_KEY,
       STORAGE_DIGITALOCEAN_SECRET: env.STORAGE_DIGITALOCEAN_SECRET,
       STORAGE_DIGITALOCEAN_REGION: env.STORAGE_DIGITALOCEAN_REGION,
