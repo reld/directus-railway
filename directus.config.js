@@ -22,7 +22,6 @@ module.exports = function (env) {
       DB_DATABASE: env.PGDATABASE,
       DB_USER: env.PGUSER,
       DB_PASSWORD: env.PGPASSWORD,
-      DB_SSL: true,
       STORAGE_LOCATIONS: 'digitalocean',
       STORAGE_DIGITALOCEAN_DRIVER: 's3',
       STORAGE_DIGITALOCEAN_KEY: env.STORAGE_DIGITALOCEAN_KEY,
